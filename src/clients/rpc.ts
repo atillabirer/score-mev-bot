@@ -166,11 +166,9 @@ if (RPC_REQUESTS_PER_SECOND > 0) {
     commitment: 'processed',
     fetch: coalesceFetch(),
     disableRetryOnRateLimit: true,
-    httpAgent: keepaliveAgent,
   });
 } else {
   connection = new Connection(RPC_URL, {
-    httpAgent: keepaliveAgent,
     disableRetryOnRateLimit: true,
     commitment: 'processed',
   });

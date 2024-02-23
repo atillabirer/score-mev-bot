@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es2019",
+    "outDir": "dist/esm/",
+    "rootDir": "./src",
+    "module": "commonjs",
+  }
+}

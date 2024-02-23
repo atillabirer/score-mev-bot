@@ -5,7 +5,7 @@
   "author": "Jito Labs",
   "license": "Apache-2.0",
   "engines": {
-    "node": ">= 16.19 <17"
+    "node": ">=20"
   },
   "scripts": {
     "prestart": "$npm_execpath run build",
@@ -54,6 +54,7 @@
     "jito-ts": "^2.2.0",
     "jsbi": "^4.3.0",
     "node-fetch": "^3.3.0",
-    "pino": "^8.11.0"
+    "pino": "^8.11.0",
+    "raydium_amm": "^0.3.0"
   }
 }

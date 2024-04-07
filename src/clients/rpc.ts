@@ -89,7 +89,7 @@ const coalesceFetch = () => {
     while (requestQueue.size() > 0 && i < RPC_MAX_BATCH_SIZE) {
       const { url, optionsWithoutDefaults, resolve } = requestQueue.dequeue();
 
-      const body = JSON.parse(optionsWithoutDefaults.body);
+      const body = JSON.parse(optionsWithoutDefaults.body.toString());
       body.id = i.toString();
       newBodies.push(body);
       resolves.push(resolve);

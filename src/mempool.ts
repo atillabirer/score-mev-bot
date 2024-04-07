@@ -8,6 +8,7 @@ import { searcherClients } from './clients/jito.js';
 const PROGRAMS_OF_INTEREST = [
   new PublicKey('675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8'), // Raydium
   new PublicKey('CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK'), // Raydium CLMM
+  new PublicKey("JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4") //joopiter
 ];
 
 type MempoolUpdate = {

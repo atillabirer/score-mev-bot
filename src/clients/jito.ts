@@ -17,7 +17,7 @@ const GEYSER_ACCESS_TOKEN = config.get('geyser_access_token');
 const decodedKey = new Uint8Array(
   JSON.parse(fs.readFileSync(AUTH_KEYPAIR_PATH).toString()) as number[],
 );
-const keypair = Keypair.fromSecretKey(decodedKey);
+export const keypair = Keypair.fromSecretKey(decodedKey);
 
 const searcherClients: SearcherClient[] = [];
 
